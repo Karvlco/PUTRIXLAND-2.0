@@ -1,1 +1,135 @@
-putrixland
+/* =========================================
+   PUTRIXLAND
+   Una experiencia a través de Chocho
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#040014;
+    font-family:'Press Start 2P',cursive;
+
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* Canvas */
+
+#game{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+    radial-gradient(circle at top,
+    #2d1459 0%,
+    #120025 50%,
+    #000000 100%);
+
+}
+
+/* Menú principal */
+
+#loadingScreen{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:22px;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(4px);
+
+}
+
+/* Logo */
+
+#title{
+
+    font-size:clamp(24px,5vw,58px);
+
+    color:white;
+
+    text-shadow:
+    0 0 12px #00d0ff,
+    0 0 30px #7a3cff,
+    0 0 60px #bb66ff;
+
+}
+
+/* Subtítulo */
+
+#subtitle{
+
+    color:#f0c8ff;
+
+    font-size:12px;
+
+    text-align:center;
+
+    line-height:20px;
+
+}
+
+/* Botones */
+
+button{
+
+    width:280px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-family:'Press Start 2P',cursive;
+
+    background:#8c2dff;
+
+    color:white;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    background:#b24dff;
+
+    box-shadow:0 0 25px #bb66ff;
+
+}
