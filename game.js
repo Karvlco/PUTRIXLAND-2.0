@@ -93,8 +93,12 @@ animate();
 
 const playButton = document.getElementById("playButton");
 
-playButton.addEventListener("click", ()=>{
+if (playButton) {
 
-    alert("💮 Bienvenido a PUTRIXLAND\n\nUna experiencia a través de Chocho");
+    playButton.addEventListener("click", () => {
 
-});
+        alert("💮 Bienvenido a PUTRIXLAND\n\nUna experiencia a través de Chocho");
+
+    });
+
+}
