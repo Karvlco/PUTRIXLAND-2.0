@@ -103,7 +103,8 @@ if (playButton) {
 
             loadingScreen.style.display = "none";
             characterScreen.style.display = "flex";
-
+            
+            alert("El selector debería aparecer ahora");
         } else {
 
             alert("⚠️ No se encontró la pantalla del selector.");
