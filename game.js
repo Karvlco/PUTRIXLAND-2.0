@@ -150,6 +150,10 @@ const characterName = document.getElementById("characterName");
 const leftButton = document.getElementById("leftButton");
 const rightButton = document.getElementById("rightButton");
 
+const selectCharacter = document.getElementById("selectCharacter");
+
+let selectedCharacter = null;
+
 function updateCharacter(){
 
     selectorImage.src = characters[currentCharacter].image;
@@ -162,8 +166,6 @@ function updateCharacter(){
 // FLECHA DERECHA
 // =========================================
 rightButton.addEventListener("click", () => {
-
-    alert("Derecha");
 
     currentCharacter++;
 
@@ -192,6 +194,18 @@ leftButton.addEventListener("click", () => {
     }
 
     updateCharacter();
+
+});
+
+// =========================================
+// SELECCIONAR PERSONAJE
+// =========================================
+
+selectCharacter.addEventListener("click", () => {
+
+    selectedCharacter = characters[currentCharacter];
+
+    alert("Has elegido a " + selectedCharacter.name);
 
 });
 
