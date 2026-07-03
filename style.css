@@ -147,6 +147,9 @@ button:hover{
 
     justify-content:center;
     align-items:center;
+
+    padding:40px;
+
     gap:40px;
 
     z-index:20;
@@ -166,10 +169,14 @@ button:hover{
 
 #selectorImage{
 
-    width:min(90vw,700px);
-    max-height:75vh;
+    max-width:700px;
+    width:70vw;
+
+    max-height:70vh;
 
     object-fit:contain;
+
+    display:block;
 
     image-rendering:pixelated;
 
