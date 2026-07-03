@@ -161,8 +161,9 @@ function updateCharacter(){
 // =========================================
 // FLECHA DERECHA
 // =========================================
-
 rightButton.addEventListener("click", () => {
+
+    alert("Derecha");
 
     currentCharacter++;
 
