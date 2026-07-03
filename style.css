@@ -134,29 +134,60 @@ button:hover{
 
 }
 
-<!-- ===========================
-     SELECTOR DE PERSONAJES
-=========================== -->
+/* =========================================
+   SELECTOR DE PERSONAJES
+========================================= */
 
-<div id="characterScreen" style="display:none;">
+#characterScreen{
 
-    <button id="leftButton" class="arrowButton">◀</button>
+    position:absolute;
+    inset:0;
 
-    <div id="selectorContainer">
+    display:none;
 
-        <img
-            id="selectorImage"
-            src="assets/sprites/Selector_xuxi.PNG"
-            alt="Selector de personaje">
+    justify-content:center;
+    align-items:center;
+    gap:40px;
 
-        <button id="selectCharacter">
+    z-index:20;
 
-            💮 SELECCIONAR
+    background:#050014;
 
-        </button>
+}
 
-    </div>
+#selectorContainer{
 
-    <button id="rightButton" class="arrowButton">▶</button>
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
 
-</div>
+}
+
+#selectorImage{
+
+    width:min(90vw,700px);
+    max-height:75vh;
+
+    object-fit:contain;
+
+    image-rendering:pixelated;
+
+}
+
+.arrowButton{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+}
+
+#selectCharacter{
+
+    width:320px;
+
+}
