@@ -92,12 +92,23 @@ animate();
 // =========================================
 
 const playButton = document.getElementById("playButton");
+const loadingScreen = document.getElementById("loadingScreen");
+const characterScreen = document.getElementById("characterScreen");
 
 if (playButton) {
 
     playButton.addEventListener("click", () => {
 
-        alert("💮 Bienvenido a PUTRIXLAND\n\nUna experiencia a través de Chocho");
+        if (loadingScreen && characterScreen) {
+
+            loadingScreen.style.display = "none";
+            characterScreen.style.display = "flex";
+
+        } else {
+
+            alert("⚠️ No se encontró la pantalla del selector.");
+
+        }
 
     });
 
