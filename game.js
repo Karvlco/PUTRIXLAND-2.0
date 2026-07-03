@@ -127,7 +127,7 @@ const characters = [
 
     {
         name: "REVELUVIOSA",
-        image: "assets/sprites/Selector_reveluviosa.PNG"
+        image: "assets/sprites/Selector_reveluvdiosa.PNG"
     },
 
     {
