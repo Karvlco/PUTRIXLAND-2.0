@@ -158,6 +158,42 @@ function updateCharacter(){
 
 }
 
+// =========================================
+// FLECHA DERECHA
+// =========================================
+
+rightButton.addEventListener("click", () => {
+
+    currentCharacter++;
+
+    if (currentCharacter >= characters.length) {
+
+        currentCharacter = 0;
+
+    }
+
+    updateCharacter();
+
+});
+
+// =========================================
+// FLECHA IZQUIERDA
+// =========================================
+
+leftButton.addEventListener("click", () => {
+
+    currentCharacter--;
+
+    if (currentCharacter < 0) {
+
+        currentCharacter = characters.length - 1;
+
+    }
+
+    updateCharacter();
+
+});
+
 if (playButton) {
 
     playButton.addEventListener("click", () => {
