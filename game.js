@@ -94,6 +94,69 @@ animate();
 const playButton = document.getElementById("playButton");
 const loadingScreen = document.getElementById("loadingScreen");
 const characterScreen = document.getElementById("characterScreen");
+// =========================================
+// PERSONAJES
+// =========================================
+
+const characters = [
+
+    {
+        name: "XUXI",
+        image: "assets/sprites/Selector_xuxi.PNG"
+    },
+
+    {
+        name: "CHOCHO",
+        image: "assets/sprites/Selector_chocho.jpg"
+    },
+
+    {
+        name: "CARLITOS",
+        image: "assets/sprites/Selector_carlitos.PNG"
+    },
+
+    {
+        name: "KIYIXXX",
+        image: "assets/sprites/Selector_kiyixxx.jpg"
+    },
+
+    {
+        name: "MAMASITA",
+        image: "assets/sprites/Selector_mamasita.PNG"
+    },
+
+    {
+        name: "REVELUVIOSA",
+        image: "assets/sprites/Selector_reveluviosa.PNG"
+    },
+
+    {
+        name: "SRTA MARICONXXX",
+        image: "assets/sprites/Selector_srta_mariconxxx.PNG"
+    },
+
+    {
+        name: "XOXO",
+        image: "assets/sprites/Selector_xoxo.PNG"
+    }
+
+];
+
+let currentCharacter = 0;
+
+const selectorImage = document.getElementById("selectorImage");
+const characterName = document.getElementById("characterName");
+
+const leftButton = document.getElementById("leftButton");
+const rightButton = document.getElementById("rightButton");
+
+function updateCharacter(){
+
+    selectorImage.src = characters[currentCharacter].image;
+
+    characterName.textContent = characters[currentCharacter].name;
+
+}
 
 if (playButton) {
 
@@ -104,7 +167,6 @@ if (playButton) {
             loadingScreen.style.display = "none";
             characterScreen.style.display = "flex";
             
-            alert("El selector debería aparecer ahora");
         } else {
 
             alert("⚠️ No se encontró la pantalla del selector.");
