@@ -94,6 +94,15 @@ animate();
 const playButton = document.getElementById("playButton");
 const loadingScreen = document.getElementById("loadingScreen");
 const characterScreen = document.getElementById("characterScreen");
+
+// =========================================
+// MÚSICA
+// =========================================
+
+const selectorMusic = new Audio("assets/music/Oh_me_resbalo_putonas_version.mp3");
+
+selectorMusic.loop = true;
+selectorMusic.volume = 0.4;
 // =========================================
 // PERSONAJES
 // =========================================
